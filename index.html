@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Movieflix: a pretty movie catalogue</title>
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link href="assets/css/style_landing.css" rel="stylesheet">
+  <link href="assets/css/scrollbar.css" rel="stylesheet">
+  <link href="assets/css/style_modal.css" rel="stylesheet">
+</head>
+<body class="overflow-x-hidden">
+
+<!-- Seção inicial -->
+<div class="body-landing">
+    <div class="overlay"></div>
+
+    <div class="container-fluid p-4 content">
+      <div class="d-flex justify-content-between align-items-center mb-5">
+        <div class="logo text-info">Movieflix</div>
+        <div class="d-flex align-items-center">
+          <div class="dropdown me-3">
+            <button class="btn btn-dark dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              Português
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+              <li><a class="dropdown-item" href="#">English</a></li>
+              <li><a class="dropdown-item" href="#">Español</a></li>
+            </ul>
+          </div>
+          <button class="btn btn-info text-white">Entrar</button>
+        </div>
+      </div>
+    
+      <div class="text-center mt-5 pt-5">
+        <h1 class="fw-bold display-4">Filmes, séries e<br>muito mais, sem<br>limites</h1>
+        <h5 class="mt-4">De graça. Entre quando quiser.</h5>
+        <p class="mt-3">Quer conhecer filmes novos? Informe seu email para criar sua conta.</p>
+    
+        <div class="row justify-content-center mt-3">
+          <div class="col-md-6 col-lg-4">
+            <div class="input-group">
+                <input type="email" class="form-control" placeholder="Entre com seu e-mail">
+                <a href="movies.html">
+                    <button class="btn btn-info text-white" type="button">
+                      Vamos lá
+                    </button>
+                </a>  
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+</div>
+
+<!-- Seção de sugestões -->
+<div class="container py-5 px-3">
+    <h2 class="mb-4">Sugestões dos desenvolvedores</h2>
+  
+    <!-- Scroll horizontal -->
+    <div class="overflow-auto py-2">
+      <div class="d-flex flex-nowrap gap-3 pb-2">
+  
+        <div class="card bg-black border-0 flex-shrink-0" data-bs-toggle="modal" data-bs-target="#mikuModal" style="width: 180px; height: 270px;">
+          <img src="assets/images/hatsune-miku-capa.webp" class="card-img-top h-100 object-fit-cover " alt="">
+        </div>
+  
+        <div class="card bg-black border-0 flex-shrink-0" data-bs-toggle="modal" data-bs-target="#caosModal" style="width: 180px; height: 270px;">
+          <img src="assets/images/caos_e_destruicao.jpg" class="card-img-top h-100 object-fit-cover " alt="">
+        </div>
+  
+        <div class="card bg-black border-0 flex-shrink-0" data-bs-toggle="modal" data-bs-target="#interstellarModal" style="width: 180px; height: 270px;">
+          <img src="assets/images/interstellar.png" class="card-img-top h-100 object-fit-cover " alt="">
+        </div>
+  
+        <div class="card bg-black border-0 flex-shrink-0" data-bs-toggle="modal" data-bs-target="#adolescenciaModal" style="width: 180px; height: 270px;">
+          <img src="assets/images/adolescencia.jpg" class="card-img-top h-100 object-fit-cover " alt="">
+        </div>
+  
+        <div class="card bg-black border-0 flex-shrink-0" data-bs-toggle="modal" data-bs-target="#demonslayerModal" style="width: 180px; height: 270px;">
+          <img src="assets/images/demon-slayer-capa.webp" class="card-img-top h-100 object-fit-cover " alt="">
+        </div>
+  
+      </div>
+    </div>
+</div>
+<br><br><br>
+
+<div class="modal fade" id="interstellarModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-darkgrey text-white border-0 rounded-4 overflow-hidden">
+
+      <div class="modal-body p-0 position-relative">
+        <div class="position-relative">
+          <img src="assets/images/interstellar_modal.jpeg" class="w-100 object-fit-cover" style="max-height: 300px; object-position: top;" alt="">
+          <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-dark">
+            <h1 class="display-6 fw-bold text-shadow">Interstellar</h1>
+          </div>
+        </div>
+
+        <div class="p-4">
+          <div class="mb-3 d-flex flex-wrap gap-2">
+            <span class="badge bg-secondary">2014</span>
+            <span class="badge bg-secondary">A12</span>
+            <span class="badge bg-secondary">Filme</span>
+            <span class="badge bg-secondary">Sci-Fi</span>
+          </div>
+
+          <p class="text-white-50">
+            As reservas naturais da Terra estão chegando ao fim e um grupo de astronautas 
+            recebe a missão de verificar possíveis planetas para receberem a população 
+            mundial, possibilitando a continuação da espécie. Cooper é chamado para 
+            liderar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos. Ao lado de Brand, Jenkins e Doyle, ele seguirá em busca de um novo lar.
+          </p>
+
+          <button class="btn btn-info mt-3">
+            Vamos lá <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="demonslayerModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-darkgrey text-white border-0 rounded-4 overflow-hidden">
+
+      <div class="modal-body p-0 position-relative">
+        <div class="position-relative">
+          <img src="assets/images/demon_slayer_modal.avif" class="w-100 object-fit-cover" style="max-height: 300px; object-position: top;" alt="">
+          <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-dark">
+            <h1 class="display-6 fw-bold text-shadow">Demon Slayer: Castelo Infinito</h1>
+          </div>
+        </div>
+
+        <div class="p-4">
+          <div class="mb-3 d-flex flex-wrap gap-2">
+            <span class="badge bg-secondary">2025</span>
+            <span class="badge bg-secondary">A16</span>
+            <span class="badge bg-secondary">Filme</span>
+            <span class="badge bg-secondary">Anime</span>
+          </div>
+
+          <p class="text-white-50">
+            Com o líder do Esquadrão dos Caçadores em perigo, Tanjiro e os Hashira 
+            vão até a sede mas são sugados em uma descida profunda para um espaço 
+            misterioso, por obra de Muzan Kibutsuji. O destino aonde Tanjiro e os 
+            caçadores caem é a fortaleza dos demônios, o Castelo Infinito. E então, 
+            o campo de batalha está formado para dar início a luta final entre o 
+            Esquadrão de Caçadores e os demônios.
+          </p>
+
+          <button class="btn btn-info mt-3" onclick="window.location.href='movies.html'">
+            Vamos lá <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="mikuModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-darkgrey text-white border-0 rounded-4 overflow-hidden">
+
+      <div class="modal-body p-0 position-relative">
+        <div class="position-relative">
+          <img src="assets/images/hatsune-miku-capa-grande.webp" class="w-100 object-fit-cover" style="max-height: 300px; object-position: top;" alt="">
+          <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-dark">
+            <h1 class="display-6 fw-bold text-shadow">Uma Miku que não sabe cantar</h1>
+          </div>
+        </div>
+
+        <div class="p-4">
+          <div class="mb-3 d-flex flex-wrap gap-2">
+            <span class="badge bg-secondary">2025</span>
+            <span class="badge bg-secondary">A10</span>
+            <span class="badge bg-secondary">Filme</span>
+            <span class="badge bg-secondary">Anime</span>
+          </div>
+
+          <p class="text-white-50">
+            A guitarrista e compositora Ichika faz amizade com a cantora virtual 
+            Hatsune Miku em Shibuya. Ela ajuda a artista a criar músicas emocionantes 
+            e formar conexões profundas.
+          </p>
+
+          <button class="btn btn-info mt-3">
+            Vamos lá <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="caosModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-darkgrey text-white border-0 rounded-4 overflow-hidden">
+
+      <div class="modal-body p-0 position-relative">
+        <div class="position-relative">
+          <img src="assets/images/caos_e_destruicao_modal.webp" class="w-100 object-fit-cover" style="max-height: 300px; object-position: top;" alt="">
+          <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-dark">
+            <h1 class="display-6 fw-bold text-shadow">Caos e Destruição</h1>
+          </div>
+        </div>
+
+        <div class="p-4">
+          <div class="mb-3 d-flex flex-wrap gap-2">
+            <span class="badge bg-secondary">2025</span>
+            <span class="badge bg-secondary">A16</span>
+            <span class="badge bg-secondary">Filme</span>
+            <span class="badge bg-secondary">Ação</span>
+          </div>
+
+          <p class="text-white-50">
+            Um roubo de drogas sai do controle, levando um policial a encarar o 
+            submundo de uma cidade corrupta para salvar o filho de um político 
+            importante.
+          </p>
+
+          <button class="btn btn-info mt-3">
+            Vamos lá <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="adolescenciaModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-darkgrey text-white border-0 rounded-4 overflow-hidden">
+
+      <div class="modal-body p-0 position-relative">
+        <div class="position-relative">
+          <img src="assets/images/adolescencia_modal.webp" class="w-100 object-fit-cover" style="max-height: 300px; object-position: top;" alt="">
+          <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-dark">
+            <h1 class="display-6 fw-bold text-shadow">Adolescência</h1>
+          </div>
+        </div>
+
+        <div class="p-4">
+          <div class="mb-3 d-flex flex-wrap gap-2">
+            <span class="badge bg-secondary">2025</span>
+            <span class="badge bg-secondary">A16</span>
+            <span class="badge bg-secondary">Série</span>
+            <span class="badge bg-secondary">Drama</span>
+          </div>
+
+          <p class="text-white-50">
+            Em uma cidade inglesa, Jamie Miller (Owen Cooper), um garoto de 
+            13 anos, é preso sob suspeita de assassinar sua colega de classe.
+          </p>
+
+          <button class="btn btn-info mt-3">
+            Vamos lá <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer style="margin-bottom: 0;">
+    <div class="container">
+        <p style="font-size: medium; color:darkgray;">Ideias? Entre em contato consoco em <u>movieflix.contato@gmail.com</u></p>
+        <div class="row justify-content-between">
+            <div class="col-md-3 mb-2">
+                <ul class="list-unstyled mb-2">
+                    <li class="mb-2"><a href="#" class="text-darkgrey">Quem somos</a></li>
+                    <li class="mb-2"><a href="#" class="text-darkgrey">Nossa missão</a></li>
+                    <li class="mb-2"><a href="#" class="text-darkgrey">Perguntas frequentes</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-darkgrey">Ajuda</a></li>
+                    <li class="mb-2"><a href="#" class="text-darkgrey">Termos de uso</a></li>
+                    <li class="mb-2"><a href="#" class="text-darkgrey">Anúncios</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul class="list-unstyled mb-2">
+                    <li class="mb-2"><a href="#" class="text-darkgrey">Twitter</a></li>
+                    <li class="mb-2"><a href="#" class="text-darkgrey">Facebook</a></li>
+                    <li class="mb-2"><a href="#" class="text-darkgrey">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="text-darkgrey"><sub>Movieflix Brasil, 2025</sub></p>
+    </div>
+</footer>
+
+<script src="assets/js/bootstrap.bundle.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

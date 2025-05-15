@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+   <link rel="stylesheet" href="assets/css/bootstrap.css">
+   <link rel="stylesheet" href="assets/css/style_movies.css">
+   <link rel="stylesheet" href="assets/css/style_modal.css">
+   <link rel="stylesheet" href="assets/css/scrollbar.css">
+
+   <title>MovieFlix: A pretty movie catalogue</title>
+</head>
+
+<body class="overflow-x-hidden">
+
+   <!-- #region Navbar-->
+   <nav class="navbar navbar-expand-lg" style="background-color: rgba(20,20,20,1);">
+      <div class="container-fluid">
+         <a class="navbar-brand text-info" href="#"><b>MovieFlix</b></a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item">
+                  <a class="nav-link active text-info" aria-current="page" href="profile.html">Meu Perfil</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link active text-info" aria-current="page" href="faq.html">Perguntas Frequentes</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-info" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Idioma
+               </a>
+               <ul class="dropdown-menu" style="background-color: #0F0F0F;">
+                     <li><a class="dropdown-item text-info" href="#">Português</a></li>
+                     <li><a class="dropdown-item text-info" href="#">Inglês</a></li>
+                     <li>
+                        <hr class="dropdown-divider">
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+            <form class="d-flex" role="search">
+               <input class="form-control me-2" type="search" placeholder="Digite o filme..." aria-label="Search">
+               <button class="btn btn-outline-info" type="submit">Buscar</button>
+            </form>
+         </div>
+      </div>
+   </nav>
+   <!-- #endregion -->
+
+   <!-- #region Carousel <-->
+   <div class="container-fluid px-2 mb-5">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <img src="assets/images/batman_carousel.jpg" class="d-block w-100" alt="...">
+               <div class="carousel-caption d-block">
+                  <h5>Batman: O Cavaleiro das Trevas</h5>
+                  <p>Já disponível</p>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <img src="assets/images/demon_slayer_carousel.jpg" class="d-block w-100" alt="...">
+               <div class="carousel-caption d-block">
+                  <h5>Demon Slayer: Castelo Infinito</h5>
+                  <p>Lançamento Setembro 2025</p>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <img src="assets/images/interstellar_modal.jpeg" class="d-block w-100" alt="...">
+               <div class="carousel-caption d-block">
+                  <h5>Interestelar</h5>
+                  <p>Já disponível</p>
+               </div>
+            </div>
+         </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+         </button>
+      </div>
+   </div>
+   <!-- #endregion -->
+
+   <!-- #region Container Anime-->
+   <div class="container container-fluid mb-2">
+      <h2>Anime / Desenho</h2>
+
+      <div class="card-area overflow-auto">
+         <div class="row row-cols-2 row-cols-sm-4 row-cols-md-5 flex-nowrap g-3 g-md-0">
+            <div class="col pt-md-3 pb-md-3 ps-md-4">
+               <!-- #region Hatsune Miku card -->
+               <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#HatsuneMikuModal">
+                  <div class="card">
+                     <img src="assets/images/hatsune-miku-capa.webp" class="card-img-top" alt="hatsune-miku-capa">
+                  </div>
+               </button>
+
+               <!-- Modal -->
+               <div class="modal fade" id="HatsuneMikuModal" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                     <div class="modal-content bg-darkgrey text-white border-0 rounded-4 overflow-hidden">
+
+                        <div class="modal-body p-0 position-relative">
+                           <div class="position-relative">
+                              <img src="assets/images/hatsune-miku-capa-grande.webp" class="w-100 object-fit-cover"
+                                 style="max-height: 300px; object-position: top;" alt="">
+                              <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                                 data-bs-dismiss="modal" aria-label="Close"></button>
+                              <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-dark">
+                                 <h1 class="display-6 fw-bold text-shadow">UMA MIKU QUE NÃO SABE CANTAR</h1>
+                              </div>
+                           </div>
+
+                           <div class="p-4">
+                              <div class="mb-3 d-flex flex-wrap gap-2">
+                                 <span class="badge bg-secondary">2025</span>
+                                 <span class="badge bg-secondary">A10</span>
+                                 <span class="badge bg-secondary">Filme</span>
+                                 <span class="badge bg-secondary">Anime</span>
+                              </div>
+
+                              <p style="text-align: justify; text-indent: 1.5em;">Hatsune Miku, a icônica diva virtual,
+                                 luta
+                                 para compartilhar sua música com todos, mas algo não está funcionando. É então que ela
+                                 cruza
+                                 caminhos com Ichika, uma jovem cantora com um talento único para tocar os corações das
+                                 pessoas através de suas apresentações de rua. Desesperada, Miku pede sua ajuda para
+                                 garantir
+                                 que sua música alcance aqueles que mais precisam. Juntas, elas embarcam em uma aventura
+                                 mágica e musical que mudará suas vidas para sempre.</p>
+
+                              <button class="btn btn-info mt-3">
+                                 Vamos lá <i class="bi bi-arrow-right"></i>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- #endregion -->
+            </div>
+            <div class="col pt-md-3 pb-md-3 ps-md-4">
+               <!-- #region Demon Slayer card -->
+               <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#demonSlayerModal">
+                  <div class="card h-100">
+                     <img src="assets/images/demon-slayer-capa.webp" class="card-img-top" alt="demon-slayer-capa">
+                  </div>
+               </button>
+
+               <!-- Modal -->
+               <div class="modal fade" id="demonSlayerModal" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                     <div class="modal-content bg-darkgrey text-white border-0 rounded-4 overflow-hidden">
+
+                        <div class="modal-body p-0 position-relative">
+                           <div class="position-relative">
+                              <img src="assets/images/demon_slayer_modal.avif" class="w-100 object-fit-cover"
+                                 style="max-height: 300px; object-position: top;" alt="">
+                              <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                                 data-bs-dismiss="modal" aria-label="Close"></button>
+                              <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-dark">
+                                 <h1 class="display-6 fw-bold text-shadow">DEMON SLAYER</h1>
+                              </div>
+                           </div>
+
+                           <div class="p-4">
+                              <div class="mb-3 d-flex flex-wrap gap-2">
+                                 <span class="badge bg-secondary">2025</span>
+                                 <span class="badge bg-secondary">A12</span>
+                                 <span class="badge bg-secondary">Filme</span>
+                                 <span class="badge bg-secondary">Anime</span>
+                              </div>
+
+                              <p style="text-align: justify; text-indent: 1.5em;">Japão, era Taisho. Tanjiro, um bondoso
+                                 jovem
+                                 que ganha a vida vendendo carvão, descobre que sua família foi massacrada por um
+                                 demônio.
+                                 E
+                                 pra piorar, Nezuko, sua irmã mais nova e única sobrevivente, também foi transformada
+                                 num
+                                 demônio. Arrasado com esta sombria realidade, Tanjiro decide se tornar um matador de
+                                 demônios
+                                 para fazer sua irmã voltar a ser humana, e para matar o demônio que matou sua família.
+                                 Um
+                                 triste conto sobre dois irmãos, onde os destinos dos humanos e dos demônios se
+                                 entrelaçam,
+                                 começa agora.</p>
+
+                              <button class="btn btn-info mt-3">
+                                 Vamos lá <i class="bi bi-arrow-right"></i>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- #endregion -->
+            </div>
+            <div class="col pt-md-3 pb-md-3 ps-md-4">
+               <!-- #region Quintuplas card -->
+               <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#Quintessentials">
+                  <div class="card h-100">
+                     <img src="assets/images/quintessentials.jpg" class="card-img-top" alt="quintessentials">
+                  </div>
+               </button>
+
+               <!-- Modal -->
+               <div class="modal fade" id="Quintessentials" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                     <div class="modal-content bg-darkgrey text-white border-0 rounded-4 overflow-hidden">
+
+                        <div class="modal-body p-0 position-relative">
+                           <div class="position-relative">
+                              <img src="assets/images/quintessentials_Modal.webp" class="w-100 object-fit-cover"
+                                 style="max-height: 300px; object-position: top;" alt="">
+                              <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                                 data-bs-dismiss="modal" aria-label="Close"></button>
+                              <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-dark">
+                                 <h1 class="display-6 fw-bold text-shadow">THE QUINTESSENTIAL QUINTUPLETS</h1>
+                              </div>
+                           </div>
+
+                           <div class="p-4">
+                              <div class="mb-3 d-flex flex-wrap gap-2">
+                                 <span class="badge bg-secondary">2022</span>
+                                 <span class="badge bg-secondary">AL</span>
+                                 <span class="badge bg-secondary">Série</span>
+                                 <span class="badge bg-secondary">Anime</span>
+                              </div>
+
+                              <p style="text-align: justify; text-indent: 1.5em;">O tutor adolescente Fuutaro Uesugi finalmente tem que escolher entre as cinco irmãs Nakano, todas apaixonadas por ele.</p>
+
+                              <button class="btn btn-info mt-3">
+                                 Vamos lá <i class="bi bi-arrow-right"></i>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- #endregion -->
+            </div>
+            <div class="col pt-md-3 pb-md-3 ps-md-4">
+               <!-- #region Evangelion card -->
+               <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#Evangelion">
+                  <div class="card h-100">
+                     <img src="assets/images/evangelion.webp" class="card-img-top" alt="evangelion">
+                  </div>
+               </button>
+
+               <!-- Modal -->
+               <div class="modal fade" id="Evangelion" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                     <div class="modal-content bg-darkgrey text-white border-0 rounded-4 overflow-hidden">
+
+                        <div class="modal-body p-0 position-relative">
+                           <div class="position-relative">
+                              <img src="assets/images/evangelion_Modal.jpg" class="w-100 object-fit-cover"
+                                 style="max-height: 300px; object-position: top;" alt="">
+                              <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                                 data-bs-dismiss="modal" aria-label="Close"></button>
+                              <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-dark">
+                                 <h1 class="display-6 fw-bold text-shadow">NEON GENESIS EVANGELION</h1>
+                              </div>
+                           </div>
+
+                           <div class="p-4">
+                              <div class="mb-3 d-flex flex-wrap gap-2">
+                                 <span class="badge bg-secondary">1995</span>
+                                 <span class="badge bg-secondary">A14</span>
+                                 <span class="badge bg-secondary">Série</span>
+                                 <span class="badge bg-secondary">Anime</span>
+                              </div>
+
+                              <p style="text-align: justify; text-indent: 1.5em;">Um adolescente é reclutado pelo seu pai para ser parte duma élite de pilotos.</p>
+
+                              <button class="btn btn-info mt-3">
+                                 Vamos lá <i class="bi bi-arrow-right"></i>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- #endregion -->
+            </div>
+            <div class="col pt-md-3 pb-md-3 ps-md-4">
+               <!-- #region Death card -->
+               <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#Death">
+                  <div class="card h-100">
+                     <img src="assets/images/death.jpg" class="card-img-top" alt="death">
+                  </div>
+               </button>
+
+               <!-- Modal -->
+               <div class="modal fade" id="Death" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                     <div class="modal-content bg-darkgrey text-white border-0 rounded-4 overflow-hidden">
+
+                        <div class="modal-body p-0 position-relative">
+                           <div class="position-relative">
+                              <img src="assets/images/death_Modal.webp" class="w-100 object-fit-cover"
+                                 style="max-height: 300px; object-position: top;" alt="">
+                              <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                                 data-bs-dismiss="modal" aria-label="Close"></button>
+                              <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-dark">
+                                 <h1 class="display-6 fw-bold text-shadow">DEATH NOTE</h1>
+                              </div>
+                           </div>
+
+                           <div class="p-4">
+                              <div class="mb-3 d-flex flex-wrap gap-2">
+                                 <span class="badge bg-secondary">2006</span>
+                                 <span class="badge bg-secondary">A18</span>
+                                 <span class="badge bg-secondary">Série</span>
+                                 <span class="badge bg-secondary">Anime</span>
+                              </div>
+
+                              <p style="text-align: justify; text-indent: 1.5em;">Um estudante brilhante encontra um caderno misterioso que mata qualquer pessoa cujo nome seja escrito nele. Determinado a livrar o mundo do mal, ele elimina criminosos, mas logo atrai a atenção das autoridades e de um gênio investigador.</p>
+
+                              <button class="btn btn-info mt-3">
+                                 Vamos lá <i class="bi bi-arrow-right"></i>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- #endregion -->
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- #endregion -->
+
+
+   <!-- #region Container Serio-->
+   <div class="container container-fluid mb-2">
+      <h2 >Aclamados Pela Crítica</h2>
+
+      <div class="card-area overflow-auto">
+         <div class="row row-cols-2 row-cols-sm-4 row-cols-md-5 flex-nowrap g-3 g-md-0">
+            <div class="col pt-md-3 pb-md-3 ps-md-4">
+               <!-- #region Adolescencia card -->
+               <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#AdolescenciaModal">
+                  <div class="card h-100">
+                     <img src="assets/images/adolescencia.jpg" class="card-img-top" alt="adolescencia">
+                  </div>
+               </button>
+
+               <!-- Modal -->
+               <div class="modal fade" id="AdolescenciaModal" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                     <div class="modal-content bg-darkgrey text-white border-0 rounded-4 overflow-hidden">
+
+                        <div class="modal-body p-0 position-relative">
+                           <div class="position-relative">
+                              <img src="assets/images/adolescencia_modal.webp" class="w-100 object-fit-cover"
+                                 style="max-height: 300px; object-position: top;" alt="">
+                              <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                                 data-bs-dismiss="modal" aria-label="Close"></button>
+                              <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-dark">
+                                 <h1 class="display-6 fw-bold text-shadow">ADOLESCÊNCIA</h1>
+                              </div>
+                           </div>
+
+                           <div class="p-4">
+                              <div class="mb-3 d-flex flex-wrap gap-2">
+                                 <span class="badge bg-secondary">2025</span>
+                                 <span class="badge bg-secondary">A14</span>
+                                 <span class="badge bg-secondary">Minissérie</span>
+                                 <span class="badge bg-secondary">Realities</span>
+                              </div>
+
+                              <p style="text-align: justify; text-indent: 1.5em;">Em uma pequena cidade do Reino Unido,
+                                 o menino Jamie, de 13 anos, é acusado de assassinar o seu colega de classe. Enquanto a
+                                 família vive momentos de grande terror e medo, o pai tenta entender a situação e a
+                                 psicóloga tenta conversar com o menino para desvendar sua mente. Em meio a tudo, o
+                                 detetive Luke Bascombe luta para investigar o caso nos mínimos detalhes e descobrir a
+                                 verdade.</p>
+
+                              <button class="btn btn-info mt-3">
+                                 Vamos lá <i class="bi bi-arrow-right"></i>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- #endregion -->
+            </div>
+            <div class="col pt-md-3 pb-md-3 ps-md-4">
+               <!-- #region CaosEDestruicao card -->
+               <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#CaosEDestruicaoModal">
+                  <div class="card h-100">
+                     <img src="assets/images/caos_e_destruicao.jpg" class="card-img-top" alt="adolescencia">
+                  </div>
+               </button>
+
+               <!-- Modal -->
+               <div class="modal fade" id="CaosEDestruicaoModal" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                     <div class="modal-content bg-darkgrey text-white border-0 rounded-4 overflow-hidden">
+
+                        <div class="modal-body p-0 position-relative">
+                           <div class="position-relative">
+                              <img src="assets/images/caos_e_destruicao_modal.webp" class="w-100 object-fit-cover"
+                                 style="max-height: 300px; object-position: top;" alt="">
+                              <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                                 data-bs-dismiss="modal" aria-label="Close"></button>
+                              <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-dark">
+                                 <h1 class="display-6 fw-bold text-shadow">CAOS E DESTRUIÇÃO</h1>
+                              </div>
+                           </div>
+
+                           <div class="p-4">
+                              <div class="mb-3 d-flex flex-wrap gap-2">
+                                 <span class="badge bg-secondary">2025</span>
+                                 <span class="badge bg-secondary">A14</span>
+                                 <span class="badge bg-secondary">Filme</span>
+                                 <span class="badge bg-secondary">Ação</span>
+                              </div>
+
+                              <p style="text-align: justify; text-indent: 1.5em;">Em Caos e Destruição, um detetive
+                                 policial desiludido chamado Walker (Tom Hardy) continua lutando contra o submundo do
+                                 crime que tem tomado conta da sua cidade. Depois que uma operação de venda de drogas
+                                 acaba mal, Walker se mete no meio de uma trama perigosa, procurado por uma série de
+                                 facções e poderes paralelos relacionados a um vingativo criminoso e um político
+                                 desonesto e seus capangas. Enquanto tenta se infiltrar no obscuro universo do crime com
+                                 o objetivo de resgatar o filho do político, Walker não apenas desvenda uma teia
+                                 complexa de conspiração e corrupção, mas é obrigado a confrontar os demônios de seu
+                                 passado.</p>
+
+                              <button class="btn btn-info mt-3">
+                                 Vamos lá <i class="bi bi-arrow-right"></i>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- #endregion -->
+            </div>
+            <div class="col pt-md-3 pb-md-3 ps-md-4">
+               <!-- #region Interstellar card -->
+               <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#InterstelarModal">
+                  <div class="card h-100">
+                     <img src="assets/images/interstellar.png" class="card-img-top" alt="interestelar">
+                  </div>
+               </button>
+
+               <!-- Modal -->
+               <div class="modal fade" id="InterstelarModal" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                     <div class="modal-content bg-darkgrey text-white border-0 rounded-4 overflow-hidden">
+
+                        <div class="modal-body p-0 position-relative">
+                           <div class="position-relative">
+                              <img src="assets/images/interstellar_modal.jpeg" class="w-100 object-fit-cover"
+                                 style="max-height: 300px; object-position: top;" alt="">
+                              <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                                 data-bs-dismiss="modal" aria-label="Close"></button>
+                              <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-dark">
+                                 <h1 class="display-6 fw-bold text-shadow">INTERSTELLAR</h1>
+                              </div>
+                           </div>
+
+                           <div class="p-4">
+                              <div class="mb-3 d-flex flex-wrap gap-2">
+                                 <span class="badge bg-secondary">2025</span>
+                                 <span class="badge bg-secondary">A12</span>
+                                 <span class="badge bg-secondary">Série</span>
+                                 <span class="badge bg-secondary">Realities</span>
+                              </div>
+
+                              <p class="text-white-50" style="text-align: justify; text-indent: 1.5em;">
+                                 As reservas naturais da Terra estão chegando ao fim e um grupo de astronautas
+                                 recebe a missão de verificar possíveis planetas para receberem a população
+                                 mundial, possibilitando a continuação da espécie. Cooper é chamado para
+                                 liderar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos. Ao lado de
+                                 Brand, Jenkins e Doyle, ele seguirá em busca de um novo lar.
+                              </p>
+
+                              <button class="btn btn-info mt-3">
+                                 Vamos lá <i class="bi bi-arrow-right"></i>
+                              </button>
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- #endregion -->
+            </div>
+            <div class="col pt-md-3 pb-md-3 ps-md-4">
+               <!-- #region De Volta card -->
+               <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#DeVolta">
+                  <div class="card h-100">
+                     <img src="assets/images/de_volta_pro.jpg" class="card-img-top" alt="futuro">
+                  </div>
+               </button>
+
+               <!-- Modal -->
+               <div class="modal fade" id="DeVolta" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                     <div class="modal-content bg-darkgrey text-white border-0 rounded-4 overflow-hidden">
+
+                        <div class="modal-body p-0 position-relative">
+                           <div class="position-relative">
+                              <img src="assets/images/de_volta_pro_Modal.jpg" class="w-100 object-fit-cover"
+                                 style="max-height: 300px; object-position: top;" alt="">
+                              <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                                 data-bs-dismiss="modal" aria-label="Close"></button>
+                              <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-dark">
+                                 <h1 class="display-6 fw-bold text-shadow">DE VOLTA PARO FUTURO</h1>
+                              </div>
+                           </div>
+
+                           <div class="p-4">
+                              <div class="mb-3 d-flex flex-wrap gap-2">
+                                 <span class="badge bg-secondary">1985</span>
+                                 <span class="badge bg-secondary">AL</span>
+                                 <span class="badge bg-secondary">Filme</span>
+                                 <span class="badge bg-secondary">Ficção</span>
+                              </div>
+
+                              <p class="text-white-50" style="text-align: justify; text-indent: 1.5em;">
+                                 Marty McFly viaja para 1955 com a máquina do tempo do cientista Dr. Brown. Ele deve garantir que seus pais se apaixonem, para não arriscar sua própria existência.
+                              </p>
+
+                              <button class="btn btn-info mt-3">
+                                 Vamos lá <i class="bi bi-arrow-right"></i>
+                              </button>
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- #endregion -->
+            </div>
+            <div class="col pt-md-3 pb-md-3 ps-md-4">
+               <!-- #region Matrix card -->
+               <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#Matrix">
+                  <div class="card h-100">
+                     <img src="assets/images/matrix.jpg" class="card-img-top" alt="matrix">
+                  </div>
+               </button>
+
+               <!-- Modal -->
+               <div class="modal fade" id="Matrix" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                     <div class="modal-content bg-darkgrey text-white border-0 rounded-4 overflow-hidden">
+
+                        <div class="modal-body p-0 position-relative">
+                           <div class="position-relative">
+                              <img src="assets/images/matrix_Modal.jpg" class="w-100 object-fit-cover"
+                                 style="max-height: 300px; object-position: top;" alt="">
+                              <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                                 data-bs-dismiss="modal" aria-label="Close"></button>
+                              <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-dark">
+                                 <h1 class="display-6 fw-bold text-shadow">MATRIX</h1>
+                              </div>
+                           </div>
+
+                           <div class="p-4">
+                              <div class="mb-3 d-flex flex-wrap gap-2">
+                                 <span class="badge bg-secondary">1999</span>
+                                 <span class="badge bg-secondary">A14</span>
+                                 <span class="badge bg-secondary">Filme</span>
+                                 <span class="badge bg-secondary">Ficção</span>
+                              </div>
+
+                              <p class="text-white-50" style="text-align: justify; text-indent: 1.5em;">
+                                 Um hacker aprende com os misteriosos rebeldes sobre a verdadeira natureza de sua realidade e seu papel na guerra contra seus controladores.
+                              </p>
+
+                              <button class="btn btn-info mt-3">
+                                 Vamos lá <i class="bi bi-arrow-right"></i>
+                              </button>
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- #endregion -->
+            </div>
+            <div class="col pt-md-3 pb-md-3 ps-md-4">
+               <!-- #region Matrix card -->
+               <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#StarWars">
+                  <div class="card h-100">
+                     <img src="assets/images/star_wars.jpg" class="card-img-top" alt="matrix">
+                  </div>
+               </button>
+
+               <!-- Modal -->
+               <div class="modal fade" id="StarWars" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                     <div class="modal-content bg-darkgrey text-white border-0 rounded-4 overflow-hidden">
+
+                        <div class="modal-body p-0 position-relative">
+                           <div class="position-relative">
+                              <img src="assets/images/star_wars_Modal.avif" class="w-100 object-fit-cover"
+                                 style="max-height: 300px; object-position: top;" alt="">
+                              <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                                 data-bs-dismiss="modal" aria-label="Close"></button>
+                              <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-dark">
+                                 <h1 class="display-6 fw-bold text-shadow">STAR WARS IV: UMA NOVA ESPERANÇA</h1>
+                              </div>
+                           </div>
+
+                           <div class="p-4">
+                              <div class="mb-3 d-flex flex-wrap gap-2">
+                                 <span class="badge bg-secondary">1977</span>
+                                 <span class="badge bg-secondary">AL</span>
+                                 <span class="badge bg-secondary">Filme</span>
+                                 <span class="badge bg-secondary">Ficção</span>
+                              </div>
+
+                              <p class="text-white-50" style="text-align: justify; text-indent: 1.5em;">
+                                 Luke Skywalker une forças com um cavaleiro Jedi, um piloto arrogante, um Wookiee e dois andróides para salvar a galáxia da estação de batalha destruidora do Império, enquanto tenta resgatar a Princesa Leia do misterioso Darth Vader.
+                              </p>
+
+                              <button class="btn btn-info mt-3">
+                                 Vamos lá <i class="bi bi-arrow-right"></i>
+                              </button>
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- #endregion -->
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- #endregion -->
+
+
+   <!-- #region Container Heróis-->
+   <div class="container container-fluid mb-5">
+      <h2>Super Heróis</h2>
+
+      <div class="card-area overflow-auto">
+         <div class="row row-cols-2 row-cols-sm-4 row-cols-md-5 flex-nowrap g-3 g-md-0">
+            <div class="col pt-md-3 pb-md-3 ps-md-4">
+               <!-- #region Vingadores card -->
+               <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#VingadoresModal">
+                  <div class="card h-100">
+                     <img src="assets/images/vingadores.png" class="card-img-top" alt="adolescencia">
+                  </div>
+               </button>
+
+               <!-- Modal -->
+               <div class="modal fade" id="VingadoresModal" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                     <div class="modal-content bg-darkgrey text-white border-0 rounded-4 overflow-hidden">
+
+                        <div class="modal-body p-0 position-relative">
+                           <div class="position-relative">
+                              <img src="assets/images/vingadores-capa-grande.png" class="w-100 object-fit-cover"
+                                 style="max-height: 300px; object-position: top;" alt="">
+                              <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                                 data-bs-dismiss="modal" aria-label="Close"></button>
+                              <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-dark">
+                                 <h1 class="display-6 fw-bold text-shadow">OS VINGADORES</h1>
+                              </div>
+                           </div>
+
+                           <div class="p-4">
+                              <div class="mb-3 d-flex flex-wrap gap-2">
+                                 <span class="badge bg-secondary">2012</span>
+                                 <span class="badge bg-secondary">A12</span>
+                                 <span class="badge bg-secondary">FILME</span>
+                                 <span class="badge bg-secondary">Herói</span>
+                              </div>
+
+                              <p style="text-align: justify; text-indent: 1.5em;">Os heróis mais poderosos da Terra
+                                 devem se unir e aprender a lutar como uma equipe para impedir que um exército
+                                 alienígena escravize a humanidade.</p>
+
+                              <button class="btn btn-info mt-3">
+                                 Vamos lá <i class="bi bi-arrow-right"></i>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- #endregion -->
+            </div>
+            <div class="col pt-md-3 pb-md-3 ps-md-4">
+               <!-- #region Guardioes card -->
+               <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#GuardioesModal">
+                  <div class="card h-100">
+                     <img src="assets/images/guardioes.png" class="card-img-top" alt="adolescencia">
+                  </div>
+               </button>
+
+               <!-- Modal -->
+               <div class="modal fade" id="GuardioesModal" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                     <div class="modal-content bg-darkgrey text-white border-0 rounded-4 overflow-hidden">
+
+                        <div class="modal-body p-0 position-relative">
+                           <div class="position-relative">
+                              <img src="assets/images/guardioes-capa-grande.png" class="w-100 object-fit-cover"
+                                 style="max-height: 300px; object-position: top;" alt="">
+                              <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                                 data-bs-dismiss="modal" aria-label="Close"></button>
+                              <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-dark">
+                                 <h1 class="display-6 fw-bold text-shadow">GUARDIÕES DA GALAXIA VOL.3</h1>
+                              </div>
+                           </div>
+
+                           <div class="p-4">
+                              <div class="mb-3 d-flex flex-wrap gap-2">
+                                 <span class="badge bg-secondary">2023</span>
+                                 <span class="badge bg-secondary">A14</span>
+                                 <span class="badge bg-secondary">Filme</span>
+                                 <span class="badge bg-secondary">Herói</span>
+                              </div>
+
+                              <p style="text-align: justify; text-indent: 1.5em;">Após a perda de Gamora, Peter Quill
+                                 ainda está chateado e deve reunir os Guardiões da Galáxia em uma missão para defender o
+                                 universo e proteger Rocket.</p>
+
+                              <button class="btn btn-info mt-3">
+                                 Vamos lá <i class="bi bi-arrow-right"></i>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- #endregion -->
+            </div>
+            <div class="col pt-md-3 pb-md-3 ps-md-4">
+               <!-- #region Superman card -->
+               <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#SupermanModal">
+                  <div class="card h-100">
+                     <img src="assets/images/superman.jpg" class="card-img-top" alt="interestelar">
+                  </div>
+               </button>
+
+               <!-- Modal -->
+               <div class="modal fade" id="SupermanModal" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                     <div class="modal-content bg-darkgrey text-white border-0 rounded-4 overflow-hidden">
+
+                        <div class="modal-body p-0 position-relative">
+                           <div class="position-relative">
+                              <img src="assets/images/superman-capa-grande.png" class="w-100 object-fit-cover"
+                                 style="max-height: 300px; object-position: top;" alt="">
+                              <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                                 data-bs-dismiss="modal" aria-label="Close"></button>
+                              <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-dark">
+                                 <h1 class="display-6 fw-bold text-shadow">SUPERMAN LEGACY</h1>
+                              </div>
+                           </div>
+
+                           <div class="p-4">
+                              <div class="mb-3 d-flex flex-wrap gap-2">
+                                 <span class="badge bg-secondary">2025</span>
+                                 <span class="badge bg-secondary">A12</span>
+                                 <span class="badge bg-secondary">Filme</span>
+                                 <span class="badge bg-secondary">Herói</span>
+                              </div>
+
+                              <p class="text-white-50" style="text-align: justify; text-indent: 1.5em;">
+                                 Segue o super-herói titular enquanto ele reconcilia sua herança com sua educação
+                                 humana. Ele é a personificação da verdade, da justiça e de um futuro melhor em um mundo
+                                 que vê a bondade como algo antiquado.
+                              </p>
+
+                              <button class="btn btn-info mt-3">
+                                 Vamos lá <i class="bi bi-arrow-right"></i>
+                              </button>
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- #endregion -->
+            </div>
+            <div class="col pt-md-3 pb-md-3 ps-md-4">
+               <!-- #region Batman card -->
+               <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#BatmanModal">
+                  <div class="card h-100">
+                     <img src="assets/images/batman.png" class="card-img-top" alt="batman">
+                  </div>
+               </button>
+
+               <!-- Modal -->
+               <div class="modal fade" id="BatmanModal" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                     <div class="modal-content bg-darkgrey text-white border-0 rounded-4 overflow-hidden">
+
+                        <div class="modal-body p-0 position-relative">
+                           <div class="position-relative">
+                              <img src="assets/images/batman-capa-grande.png" class="w-100 object-fit-cover"
+                                 style="max-height: 300px; object-position: top;" alt="">
+                              <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                                 data-bs-dismiss="modal" aria-label="Close"></button>
+                              <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-dark">
+                                 <h1 class="display-6 fw-bold text-shadow">BATMAN CAVALEIRO DAS TREVAS</h1>
+                              </div>
+                           </div>
+
+                           <div class="p-4">
+                              <div class="mb-3 d-flex flex-wrap gap-2">
+                                 <span class="badge bg-secondary">2008</span>
+                                 <span class="badge bg-secondary">A12</span>
+                                 <span class="badge bg-secondary">Filme</span>
+                                 <span class="badge bg-secondary">Herói</span>
+                              </div>
+
+                              <p class="text-white-50" style="text-align: justify; text-indent: 1.5em;">
+                                 Agora com a ajuda do tenente Jim Gordon e do promotor público Harvey Dent, Batman tem
+                                 tudo para banir o crime de Gotham City de uma vez por todas. Mas em breve, os três
+                                 serão vítimas do Coringa, que pretende lançar Gotham em uma anarquia.
+                              </p>
+
+                              <button class="btn btn-info mt-3">
+                                 Vamos lá <i class="bi bi-arrow-right"></i>
+                              </button>
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- #endregion -->
+            </div>
+            <div class="col pt-md-3 pb-md-3 ps-md-4">
+               <!-- #region GaurdioesVol1 card -->
+               <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#GuardioesVol1Modal">
+                  <div class="card h-100">
+                     <img src="assets/images/guardioes-vol1.webp" class="card-img-top" alt="guardioes">
+                  </div>
+               </button>
+
+               <!-- Modal -->
+               <div class="modal fade" id="GuardioesVol1Modal" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                     <div class="modal-content bg-darkgrey text-white border-0 rounded-4 overflow-hidden">
+
+                        <div class="modal-body p-0 position-relative">
+                           <div class="position-relative">
+                              <img src="assets/images/guardioes-vol1-modal.webp" class="w-100 object-fit-cover"
+                                 style="max-height: 300px; object-position: top;" alt="">
+                              <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                                 data-bs-dismiss="modal" aria-label="Close"></button>
+                              <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-dark">
+                                 <h1 class="display-6 fw-bold text-shadow">GUARDIÕES DA GALAXIA VOL.1</h1>
+                              </div>
+                           </div>
+
+                           <div class="p-4">
+                              <div class="mb-3 d-flex flex-wrap gap-2">
+                                 <span class="badge bg-secondary">2014</span>
+                                 <span class="badge bg-secondary">A12</span>
+                                 <span class="badge bg-secondary">Filme</span>
+                                 <span class="badge bg-secondary">Herói</span>
+                              </div>
+
+                              <p class="text-white-50" style="text-align: justify; text-indent: 1.5em;">
+                                 Um grupo de criminosos intergalácticos deve se unir para impedir que um guerreiro fanático com planos de destruir o universo.
+                              </p>
+
+                              <button class="btn btn-info mt-3">
+                                 Vamos lá <i class="bi bi-arrow-right"></i>
+                              </button>
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- #endregion -->
+            </div>
+            <div class="col pt-md-3 pb-md-3 ps-md-4">
+               <!-- #region Vingadores Ulti card -->
+               <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#VingadoresUlti">
+                  <div class="card h-100">
+                     <img src="assets/images/vingadores-ultimato.jpg" class="card-img-top" alt="vingadores">
+                  </div>
+               </button>
+
+               <!-- Modal -->
+               <div class="modal fade" id="VingadoresUlti" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                     <div class="modal-content bg-darkgrey text-white border-0 rounded-4 overflow-hidden">
+
+                        <div class="modal-body p-0 position-relative">
+                           <div class="position-relative">
+                              <img src="assets/images/vingadores-ultimato-Modal.webp" class="w-100 object-fit-cover"
+                                 style="max-height: 300px; object-position: top;" alt="">
+                              <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                                 data-bs-dismiss="modal" aria-label="Close"></button>
+                              <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-dark">
+                                 <h1 class="display-6 fw-bold text-shadow">VINGADORES ULTIMATO</h1>
+                              </div>
+                           </div>
+
+                           <div class="p-4">
+                              <div class="mb-3 d-flex flex-wrap gap-2">
+                                 <span class="badge bg-secondary">2019</span>
+                                 <span class="badge bg-secondary">A12</span>
+                                 <span class="badge bg-secondary">Filme</span>
+                                 <span class="badge bg-secondary">Herói</span>
+                              </div>
+
+                              <p class="text-white-50" style="text-align: justify; text-indent: 1.5em;">
+                                 Após os eventos devastadores de Vingadores: Guerra Infinita , o universo está em ruínas, e com a ajuda de aliados os Vingadores se reúnem para desfazer as ações de Thanos e restaurar a ordem.
+                              </p>
+
+                              <button class="btn btn-info mt-3">
+                                 Vamos lá <i class="bi bi-arrow-right"></i>
+                              </button>
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- #endregion -->
+            </div>
+            <div class="col pt-md-3 pb-md-3 ps-md-4">
+               <!-- #region Thor card -->
+               <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#ThorRag">
+                  <div class="card h-100">
+                     <img src="assets/images/thor_rag.jpg" class="card-img-top" alt="vingadores">
+                  </div>
+               </button>
+
+               <!-- Modal -->
+               <div class="modal fade" id="ThorRag" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                     <div class="modal-content bg-darkgrey text-white border-0 rounded-4 overflow-hidden">
+
+                        <div class="modal-body p-0 position-relative">
+                           <div class="position-relative">
+                              <img src="assets/images/thor_rag_Modal.jpg" class="w-100 object-fit-cover"
+                                 style="max-height: 300px; object-position: top;" alt="">
+                              <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                                 data-bs-dismiss="modal" aria-label="Close"></button>
+                              <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-dark">
+                                 <h1 class="display-6 fw-bold text-shadow">THOR RAGNAROK</h1>
+                              </div>
+                           </div>
+
+                           <div class="p-4">
+                              <div class="mb-3 d-flex flex-wrap gap-2">
+                                 <span class="badge bg-secondary">2017</span>
+                                 <span class="badge bg-secondary">A12</span>
+                                 <span class="badge bg-secondary">Filme</span>
+                                 <span class="badge bg-secondary">Herói</span>
+                              </div>
+
+                              <p class="text-white-50" style="text-align: justify; text-indent: 1.5em;">
+                                 Thor está aprisionado do outro lado do universo, sem seu martelo, e se vê em uma corrida para voltar até Asgard e impedir o Ragnarok, que está nas mãos de uma nova e poderosa ameaça, a terrível Hela.
+                              </p>
+
+                              <button class="btn btn-info mt-3">
+                                 Vamos lá <i class="bi bi-arrow-right"></i>
+                              </button>
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- #endregion -->
+            </div>
+            <div class="col pt-md-3 pb-md-3 ps-md-4">
+               <!-- #region Capitão America card -->
+               <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#CapAmerica">
+                  <div class="card h-100">
+                     <img src="assets/images/cap_america.jpg" class="card-img-top" alt="vingadores">
+                  </div>
+               </button>
+
+               <!-- Modal -->
+               <div class="modal fade" id="CapAmerica" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                     <div class="modal-content bg-darkgrey text-white border-0 rounded-4 overflow-hidden">
+
+                        <div class="modal-body p-0 position-relative">
+                           <div class="position-relative">
+                              <img src="assets/images/cap_america_Modal.webp" class="w-100 object-fit-cover"
+                                 style="max-height: 300px; object-position: top;" alt="">
+                              <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+                                 data-bs-dismiss="modal" aria-label="Close"></button>
+                              <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-dark">
+                                 <h1 class="display-6 fw-bold text-shadow">CAPITÃO AMERICA: ADIMIRÁVEL MUNDO NOVO</h1>
+                              </div>
+                           </div>
+
+                           <div class="p-4">
+                              <div class="mb-3 d-flex flex-wrap gap-2">
+                                 <span class="badge bg-secondary">2025</span>
+                                 <span class="badge bg-secondary">A14</span>
+                                 <span class="badge bg-secondary">Filme</span>
+                                 <span class="badge bg-secondary">Herói</span>
+                              </div>
+
+                              <p class="text-white-50" style="text-align: justify; text-indent: 1.5em;">
+                                 Sam Wilson, o novo Capitão América, se vê no meio de um incidente internacional e deve descobrir o motivo por trás de um plano global nefasto.
+                              </p>
+
+                              <button class="btn btn-info mt-3">
+                                 Vamos lá <i class="bi bi-arrow-right"></i>
+                              </button>
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- #endregion -->
+            </div>
+         </div>
+      </div>
+   </div>
+   </div>
+   <!-- #endregion -->
+
+   <footer class="pt-5 mt-3 pb-2">
+      <div class="container">
+          <p style="font-size: medium; color:darkgray;">Ideias? Entre em contato consoco em <u>movieflix.contato@gmail.com</u></p>
+          <div class="row justify-content-between">
+              <div class="col-md-3 mb-2">
+                  <ul class="list-unstyled mb-2">
+                      <li class="mb-2"><a href="#" class="text-darkgrey">Quem somos</a></li>
+                      <li class="mb-2"><a href="#" class="text-darkgrey">Nossa missão</a></li>
+                      <li class="mb-2"><a href="#" class="text-darkgrey">Perguntas frequentes</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-3">
+                  <ul class="list-unstyled">
+                      <li class="mb-2"><a href="#" class="text-darkgrey">Ajuda</a></li>
+                      <li class="mb-2"><a href="#" class="text-darkgrey">Termos de uso</a></li>
+                      <li class="mb-2"><a href="#" class="text-darkgrey">Anúncios</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-3">
+                  <ul class="list-unstyled mb-2">
+                      <li class="mb-2"><a href="#" class="text-darkgrey">Twitter</a></li>
+                      <li class="mb-2"><a href="#" class="text-darkgrey">Facebook</a></li>
+                      <li class="mb-2"><a href="#" class="text-darkgrey">Instagram</a></li>
+                  </ul>
+              </div>
+          </div>
+          <p class="text-darkgrey"><sub>Movieflix Brasil, 2025</sub></p>
+      </div>
+  </footer>
+
+   <script src="assets/js/bootstrap.bundle.js"></script>
+   <script src="assets/js/script.js"></script>
+</body>
+
+</html>

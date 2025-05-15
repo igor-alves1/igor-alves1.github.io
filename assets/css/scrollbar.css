@@ -1,0 +1,17 @@
+.overflow-auto::-webkit-scrollbar {
+    height: 6px;
+}
+
+.overflow-auto::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.overflow-auto::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}  
+
+.overflow-auto::-webkit-scrollbar-thumb:hover {
+    background: rgba(255,255,255,0.4);
+}
