@@ -18,7 +18,7 @@
    <!-- #region Navbar-->
    <nav class="navbar navbar-expand-lg" style="background-color: rgba(20,20,20,1);">
       <div class="container-fluid">
-         <a class="navbar-brand text-info" href="#"><b>MovieFlix</b></a>
+         <a class="navbar-brand text-info" href="index.html"><b>MovieFlix</b></a>
          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -33,10 +33,10 @@
                </li>
                <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle text-info" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Idioma
-               </a>
-               <ul class="dropdown-menu" style="background-color: #0F0F0F;">
+                     aria-expanded="false">
+                     Idioma
+                  </a>
+                  <ul class="dropdown-menu" style="background-color: #0F0F0F;">
                      <li><a class="dropdown-item text-info" href="#">Português</a></li>
                      <li><a class="dropdown-item text-info" href="#">Inglês</a></li>
                      <li>
@@ -100,7 +100,7 @@
 
       <div class="card-area overflow-auto">
          <div class="row row-cols-2 row-cols-sm-4 row-cols-md-5 flex-nowrap g-3 g-md-0">
-            <div class="col pt-md-3 pb-md-3 ps-md-4">
+            <div class="col pt-md-3 pb-md-3 ps-md-4" id="MikuCard">
                <!-- #region Hatsune Miku card -->
                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#HatsuneMikuModal">
                   <div class="card">
@@ -132,7 +132,8 @@
                                  <span class="badge bg-secondary">Anime</span>
                               </div>
 
-                              <p style="text-align: justify; text-indent: 1.5em;">Hatsune Miku, a icônica diva virtual,
+                              <p class="text-white-50" style="text-align: justify; text-indent: 1.5em;">Hatsune Miku, a
+                                 icônica diva virtual,
                                  luta
                                  para compartilhar sua música com todos, mas algo não está funcionando. É então que ela
                                  cruza
@@ -141,10 +142,6 @@
                                  garantir
                                  que sua música alcance aqueles que mais precisam. Juntas, elas embarcam em uma aventura
                                  mágica e musical que mudará suas vidas para sempre.</p>
-
-                              <button class="btn btn-info mt-3">
-                                 Vamos lá <i class="bi bi-arrow-right"></i>
-                              </button>
                            </div>
                         </div>
                      </div>
@@ -155,7 +152,7 @@
             <div class="col pt-md-3 pb-md-3 ps-md-4">
                <!-- #region Demon Slayer card -->
                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#demonSlayerModal">
-                  <div class="card h-100">
+                  <div class="card h-100" id="DemonCard">
                      <img src="assets/images/demon-slayer-capa.webp" class="card-img-top" alt="demon-slayer-capa">
                   </div>
                </button>
@@ -184,7 +181,8 @@
                                  <span class="badge bg-secondary">Anime</span>
                               </div>
 
-                              <p style="text-align: justify; text-indent: 1.5em;">Japão, era Taisho. Tanjiro, um bondoso
+                              <p class="text-white-50" style="text-align: justify; text-indent: 1.5em;">Japão, era
+                                 Taisho. Tanjiro, um bondoso
                                  jovem
                                  que ganha a vida vendendo carvão, descobre que sua família foi massacrada por um
                                  demônio.
@@ -198,10 +196,6 @@
                                  triste conto sobre dois irmãos, onde os destinos dos humanos e dos demônios se
                                  entrelaçam,
                                  começa agora.</p>
-
-                              <button class="btn btn-info mt-3">
-                                 Vamos lá <i class="bi bi-arrow-right"></i>
-                              </button>
                            </div>
                         </div>
                      </div>
@@ -241,11 +235,9 @@
                                  <span class="badge bg-secondary">Anime</span>
                               </div>
 
-                              <p style="text-align: justify; text-indent: 1.5em;">O tutor adolescente Fuutaro Uesugi finalmente tem que escolher entre as cinco irmãs Nakano, todas apaixonadas por ele.</p>
-
-                              <button class="btn btn-info mt-3">
-                                 Vamos lá <i class="bi bi-arrow-right"></i>
-                              </button>
+                              <p class="text-white-50" style="text-align: justify; text-indent: 1.5em;">O tutor
+                                 adolescente Fuutaro Uesugi finalmente tem que escolher entre as cinco irmãs Nakano,
+                                 todas apaixonadas por ele.</p>
                            </div>
                         </div>
                      </div>
@@ -285,11 +277,8 @@
                                  <span class="badge bg-secondary">Anime</span>
                               </div>
 
-                              <p style="text-align: justify; text-indent: 1.5em;">Um adolescente é reclutado pelo seu pai para ser parte duma élite de pilotos.</p>
-
-                              <button class="btn btn-info mt-3">
-                                 Vamos lá <i class="bi bi-arrow-right"></i>
-                              </button>
+                              <p class="text-white-50" style="text-align: justify; text-indent: 1.5em;">Um adolescente é
+                                 reclutado pelo seu pai para ser parte duma élite de pilotos.</p>
                            </div>
                         </div>
                      </div>
@@ -329,11 +318,10 @@
                                  <span class="badge bg-secondary">Anime</span>
                               </div>
 
-                              <p style="text-align: justify; text-indent: 1.5em;">Um estudante brilhante encontra um caderno misterioso que mata qualquer pessoa cujo nome seja escrito nele. Determinado a livrar o mundo do mal, ele elimina criminosos, mas logo atrai a atenção das autoridades e de um gênio investigador.</p>
-
-                              <button class="btn btn-info mt-3">
-                                 Vamos lá <i class="bi bi-arrow-right"></i>
-                              </button>
+                              <p class="text-white-50" style="text-align: justify; text-indent: 1.5em;">Um estudante
+                                 brilhante encontra um caderno misterioso que mata qualquer pessoa cujo nome seja
+                                 escrito nele. Determinado a livrar o mundo do mal, ele elimina criminosos, mas logo
+                                 atrai a atenção das autoridades e de um gênio investigador.</p>
                            </div>
                         </div>
                      </div>
@@ -349,14 +337,14 @@
 
    <!-- #region Container Serio-->
    <div class="container container-fluid mb-2">
-      <h2 >Aclamados Pela Crítica</h2>
+      <h2>Aclamados Pela Crítica</h2>
 
       <div class="card-area overflow-auto">
          <div class="row row-cols-2 row-cols-sm-4 row-cols-md-5 flex-nowrap g-3 g-md-0">
             <div class="col pt-md-3 pb-md-3 ps-md-4">
                <!-- #region Adolescencia card -->
                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#AdolescenciaModal">
-                  <div class="card h-100">
+                  <div class="card h-100" id="AdolesCard">
                      <img src="assets/images/adolescencia.jpg" class="card-img-top" alt="adolescencia">
                   </div>
                </button>
@@ -385,16 +373,13 @@
                                  <span class="badge bg-secondary">Realities</span>
                               </div>
 
-                              <p style="text-align: justify; text-indent: 1.5em;">Em uma pequena cidade do Reino Unido,
+                              <p class="text-white-50" style="text-align: justify; text-indent: 1.5em;">Em uma pequena
+                                 cidade do Reino Unido,
                                  o menino Jamie, de 13 anos, é acusado de assassinar o seu colega de classe. Enquanto a
                                  família vive momentos de grande terror e medo, o pai tenta entender a situação e a
                                  psicóloga tenta conversar com o menino para desvendar sua mente. Em meio a tudo, o
                                  detetive Luke Bascombe luta para investigar o caso nos mínimos detalhes e descobrir a
                                  verdade.</p>
-
-                              <button class="btn btn-info mt-3">
-                                 Vamos lá <i class="bi bi-arrow-right"></i>
-                              </button>
                            </div>
                         </div>
                      </div>
@@ -405,7 +390,7 @@
             <div class="col pt-md-3 pb-md-3 ps-md-4">
                <!-- #region CaosEDestruicao card -->
                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#CaosEDestruicaoModal">
-                  <div class="card h-100">
+                  <div class="card h-100" id="CaosCard">
                      <img src="assets/images/caos_e_destruicao.jpg" class="card-img-top" alt="adolescencia">
                   </div>
                </button>
@@ -434,7 +419,8 @@
                                  <span class="badge bg-secondary">Ação</span>
                               </div>
 
-                              <p style="text-align: justify; text-indent: 1.5em;">Em Caos e Destruição, um detetive
+                              <p class="text-white-50" style="text-align: justify; text-indent: 1.5em;">Em Caos e
+                                 Destruição, um detetive
                                  policial desiludido chamado Walker (Tom Hardy) continua lutando contra o submundo do
                                  crime que tem tomado conta da sua cidade. Depois que uma operação de venda de drogas
                                  acaba mal, Walker se mete no meio de uma trama perigosa, procurado por uma série de
@@ -443,10 +429,6 @@
                                  o objetivo de resgatar o filho do político, Walker não apenas desvenda uma teia
                                  complexa de conspiração e corrupção, mas é obrigado a confrontar os demônios de seu
                                  passado.</p>
-
-                              <button class="btn btn-info mt-3">
-                                 Vamos lá <i class="bi bi-arrow-right"></i>
-                              </button>
                            </div>
                         </div>
                      </div>
@@ -457,7 +439,7 @@
             <div class="col pt-md-3 pb-md-3 ps-md-4">
                <!-- #region Interstellar card -->
                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#InterstelarModal">
-                  <div class="card h-100">
+                  <div class="card h-100" id="InterCard">
                      <img src="assets/images/interstellar.png" class="card-img-top" alt="interestelar">
                   </div>
                </button>
@@ -493,10 +475,6 @@
                                  liderar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos. Ao lado de
                                  Brand, Jenkins e Doyle, ele seguirá em busca de um novo lar.
                               </p>
-
-                              <button class="btn btn-info mt-3">
-                                 Vamos lá <i class="bi bi-arrow-right"></i>
-                              </button>
                            </div>
 
                         </div>
@@ -538,12 +516,9 @@
                               </div>
 
                               <p class="text-white-50" style="text-align: justify; text-indent: 1.5em;">
-                                 Marty McFly viaja para 1955 com a máquina do tempo do cientista Dr. Brown. Ele deve garantir que seus pais se apaixonem, para não arriscar sua própria existência.
+                                 Marty McFly viaja para 1955 com a máquina do tempo do cientista Dr. Brown. Ele deve
+                                 garantir que seus pais se apaixonem, para não arriscar sua própria existência.
                               </p>
-
-                              <button class="btn btn-info mt-3">
-                                 Vamos lá <i class="bi bi-arrow-right"></i>
-                              </button>
                            </div>
 
                         </div>
@@ -585,12 +560,9 @@
                               </div>
 
                               <p class="text-white-50" style="text-align: justify; text-indent: 1.5em;">
-                                 Um hacker aprende com os misteriosos rebeldes sobre a verdadeira natureza de sua realidade e seu papel na guerra contra seus controladores.
+                                 Um hacker aprende com os misteriosos rebeldes sobre a verdadeira natureza de sua
+                                 realidade e seu papel na guerra contra seus controladores.
                               </p>
-
-                              <button class="btn btn-info mt-3">
-                                 Vamos lá <i class="bi bi-arrow-right"></i>
-                              </button>
                            </div>
 
                         </div>
@@ -632,12 +604,10 @@
                               </div>
 
                               <p class="text-white-50" style="text-align: justify; text-indent: 1.5em;">
-                                 Luke Skywalker une forças com um cavaleiro Jedi, um piloto arrogante, um Wookiee e dois andróides para salvar a galáxia da estação de batalha destruidora do Império, enquanto tenta resgatar a Princesa Leia do misterioso Darth Vader.
+                                 Luke Skywalker une forças com um cavaleiro Jedi, um piloto arrogante, um Wookiee e dois
+                                 andróides para salvar a galáxia da estação de batalha destruidora do Império, enquanto
+                                 tenta resgatar a Princesa Leia do misterioso Darth Vader.
                               </p>
-
-                              <button class="btn btn-info mt-3">
-                                 Vamos lá <i class="bi bi-arrow-right"></i>
-                              </button>
                            </div>
 
                         </div>
@@ -662,7 +632,7 @@
                <!-- #region Vingadores card -->
                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#VingadoresModal">
                   <div class="card h-100">
-                     <img src="assets/images/vingadores.png" class="card-img-top" alt="adolescencia">
+                     <img src="assets/images/vingadores.png" class="card-img-top" alt="vingadores">
                   </div>
                </button>
 
@@ -690,13 +660,10 @@
                                  <span class="badge bg-secondary">Herói</span>
                               </div>
 
-                              <p style="text-align: justify; text-indent: 1.5em;">Os heróis mais poderosos da Terra
+                              <p class="text-white-50" style="text-align: justify; text-indent: 1.5em;">Os heróis mais
+                                 poderosos da Terra
                                  devem se unir e aprender a lutar como uma equipe para impedir que um exército
                                  alienígena escravize a humanidade.</p>
-
-                              <button class="btn btn-info mt-3">
-                                 Vamos lá <i class="bi bi-arrow-right"></i>
-                              </button>
                            </div>
                         </div>
                      </div>
@@ -708,7 +675,7 @@
                <!-- #region Guardioes card -->
                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#GuardioesModal">
                   <div class="card h-100">
-                     <img src="assets/images/guardioes.png" class="card-img-top" alt="adolescencia">
+                     <img src="assets/images/guardioes.png" class="card-img-top" alt="guardioes">
                   </div>
                </button>
 
@@ -736,13 +703,10 @@
                                  <span class="badge bg-secondary">Herói</span>
                               </div>
 
-                              <p style="text-align: justify; text-indent: 1.5em;">Após a perda de Gamora, Peter Quill
+                              <p class="text-white-50" style="text-align: justify; text-indent: 1.5em;">Após a perda de
+                                 Gamora, Peter Quill
                                  ainda está chateado e deve reunir os Guardiões da Galáxia em uma missão para defender o
                                  universo e proteger Rocket.</p>
-
-                              <button class="btn btn-info mt-3">
-                                 Vamos lá <i class="bi bi-arrow-right"></i>
-                              </button>
                            </div>
                         </div>
                      </div>
@@ -787,10 +751,6 @@
                                  humana. Ele é a personificação da verdade, da justiça e de um futuro melhor em um mundo
                                  que vê a bondade como algo antiquado.
                               </p>
-
-                              <button class="btn btn-info mt-3">
-                                 Vamos lá <i class="bi bi-arrow-right"></i>
-                              </button>
                            </div>
 
                         </div>
@@ -836,10 +796,6 @@
                                  tudo para banir o crime de Gotham City de uma vez por todas. Mas em breve, os três
                                  serão vítimas do Coringa, que pretende lançar Gotham em uma anarquia.
                               </p>
-
-                              <button class="btn btn-info mt-3">
-                                 Vamos lá <i class="bi bi-arrow-right"></i>
-                              </button>
                            </div>
 
                         </div>
@@ -881,12 +837,9 @@
                               </div>
 
                               <p class="text-white-50" style="text-align: justify; text-indent: 1.5em;">
-                                 Um grupo de criminosos intergalácticos deve se unir para impedir que um guerreiro fanático com planos de destruir o universo.
+                                 Um grupo de criminosos intergalácticos deve se unir para impedir que um guerreiro
+                                 fanático com planos de destruir o universo.
                               </p>
-
-                              <button class="btn btn-info mt-3">
-                                 Vamos lá <i class="bi bi-arrow-right"></i>
-                              </button>
                            </div>
 
                         </div>
@@ -928,12 +881,10 @@
                               </div>
 
                               <p class="text-white-50" style="text-align: justify; text-indent: 1.5em;">
-                                 Após os eventos devastadores de Vingadores: Guerra Infinita , o universo está em ruínas, e com a ajuda de aliados os Vingadores se reúnem para desfazer as ações de Thanos e restaurar a ordem.
+                                 Após os eventos devastadores de Vingadores: Guerra Infinita , o universo está em
+                                 ruínas, e com a ajuda de aliados os Vingadores se reúnem para desfazer as ações de
+                                 Thanos e restaurar a ordem.
                               </p>
-
-                              <button class="btn btn-info mt-3">
-                                 Vamos lá <i class="bi bi-arrow-right"></i>
-                              </button>
                            </div>
 
                         </div>
@@ -975,12 +926,10 @@
                               </div>
 
                               <p class="text-white-50" style="text-align: justify; text-indent: 1.5em;">
-                                 Thor está aprisionado do outro lado do universo, sem seu martelo, e se vê em uma corrida para voltar até Asgard e impedir o Ragnarok, que está nas mãos de uma nova e poderosa ameaça, a terrível Hela.
+                                 Thor está aprisionado do outro lado do universo, sem seu martelo, e se vê em uma
+                                 corrida para voltar até Asgard e impedir o Ragnarok, que está nas mãos de uma nova e
+                                 poderosa ameaça, a terrível Hela.
                               </p>
-
-                              <button class="btn btn-info mt-3">
-                                 Vamos lá <i class="bi bi-arrow-right"></i>
-                              </button>
                            </div>
 
                         </div>
@@ -1022,12 +971,9 @@
                               </div>
 
                               <p class="text-white-50" style="text-align: justify; text-indent: 1.5em;">
-                                 Sam Wilson, o novo Capitão América, se vê no meio de um incidente internacional e deve descobrir o motivo por trás de um plano global nefasto.
+                                 Sam Wilson, o novo Capitão América, se vê no meio de um incidente internacional e deve
+                                 descobrir o motivo por trás de um plano global nefasto.
                               </p>
-
-                              <button class="btn btn-info mt-3">
-                                 Vamos lá <i class="bi bi-arrow-right"></i>
-                              </button>
                            </div>
 
                         </div>
@@ -1044,33 +990,34 @@
 
    <footer class="pt-5 mt-3 pb-2">
       <div class="container">
-          <p style="font-size: medium; color:darkgray;">Ideias? Entre em contato consoco em <u>movieflix.contato@gmail.com</u></p>
-          <div class="row justify-content-between">
-              <div class="col-md-3 mb-2">
-                  <ul class="list-unstyled mb-2">
-                      <li class="mb-2"><a href="#" class="text-darkgrey">Quem somos</a></li>
-                      <li class="mb-2"><a href="#" class="text-darkgrey">Nossa missão</a></li>
-                      <li class="mb-2"><a href="#" class="text-darkgrey">Perguntas frequentes</a></li>
-                  </ul>
-              </div>
-              <div class="col-md-3">
-                  <ul class="list-unstyled">
-                      <li class="mb-2"><a href="#" class="text-darkgrey">Ajuda</a></li>
-                      <li class="mb-2"><a href="#" class="text-darkgrey">Termos de uso</a></li>
-                      <li class="mb-2"><a href="#" class="text-darkgrey">Anúncios</a></li>
-                  </ul>
-              </div>
-              <div class="col-md-3">
-                  <ul class="list-unstyled mb-2">
-                      <li class="mb-2"><a href="#" class="text-darkgrey">Twitter</a></li>
-                      <li class="mb-2"><a href="#" class="text-darkgrey">Facebook</a></li>
-                      <li class="mb-2"><a href="#" class="text-darkgrey">Instagram</a></li>
-                  </ul>
-              </div>
-          </div>
-          <p class="text-darkgrey"><sub>Movieflix Brasil, 2025</sub></p>
+         <p style="font-size: medium; color:darkgray;">Ideias? Entre em contato consoco em
+            <u>movieflix.contato@gmail.com</u></p>
+         <div class="row justify-content-between">
+            <div class="col-md-3 mb-2">
+               <ul class="list-unstyled mb-2">
+                  <li class="mb-2"><a href="#" class="text-darkgrey">Quem somos</a></li>
+                  <li class="mb-2"><a href="#" class="text-darkgrey">Nossa missão</a></li>
+                  <li class="mb-2"><a href="#" class="text-darkgrey">Perguntas frequentes</a></li>
+               </ul>
+            </div>
+            <div class="col-md-3">
+               <ul class="list-unstyled">
+                  <li class="mb-2"><a href="#" class="text-darkgrey">Ajuda</a></li>
+                  <li class="mb-2"><a href="#" class="text-darkgrey">Termos de uso</a></li>
+                  <li class="mb-2"><a href="#" class="text-darkgrey">Anúncios</a></li>
+               </ul>
+            </div>
+            <div class="col-md-3">
+               <ul class="list-unstyled mb-2">
+                  <li class="mb-2"><a href="#" class="text-darkgrey">Twitter</a></li>
+                  <li class="mb-2"><a href="#" class="text-darkgrey">Facebook</a></li>
+                  <li class="mb-2"><a href="#" class="text-darkgrey">Instagram</a></li>
+               </ul>
+            </div>
+         </div>
+         <p class="text-darkgrey"><sub>Movieflix Brasil, 2025</sub></p>
       </div>
-  </footer>
+   </footer>
 
    <script src="assets/js/bootstrap.bundle.js"></script>
    <script src="assets/js/script.js"></script>
