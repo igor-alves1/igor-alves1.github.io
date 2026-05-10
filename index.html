@@ -4,68 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Para Minha Mãe ❤️</title>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Indie+Flower&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <div class="sketch-overlay"></div>
-
-    <header>
-        <h1 class="titulo-manuscrito">Feliz Dia das Mães, Mãe!</h1>
+    <!-- CABEÇALHO -->
+    <header class="text-center py-3 cabecalho-site">
+        <h1 class="titulo-principal">Para a Melhor Mãe do Mundo</h1>
+        <p class="subtitulo mb-0">Um pequeno espaço dedicado a você.</p>
     </header>
 
-    <main class="container">
-        <section class="secao-carrossel sketch-border">
-            <div class="slides-wrapper">
-                <img src="foto1.jpg" class="slide active" alt="Foto 1">
-                <img src="foto2.jpg" class="slide" alt="Foto 2">
-                <img src="foto3.jpg" class="slide" alt="Foto 3">
-            </div>
-            <button class="nav-btn prev" onclick="moveSlide(-1)">❮</button>
-            <button class="nav-btn next" onclick="moveSlide(1)">❯</button>
-        </section>
-
-        <section class="secao-carta sketch-border">
-            <div class="papel-pautado">
-                <h2 class="titulo-carta">Minha Homenagem</h2>
-                <p>Querida mãe,</p>
-                <p>Escreva aqui sua mensagem personalizada. Use este espaço para dizer o quanto ela é especial. 
-                   O design foi pensado para parecer uma carta real escrita em papel pautado.</p>
-                <p>Obrigado por ser meu porto seguro e minha maior inspiração todos os dias.</p>
-                <p class="assinatura">Com amor, [Seu Nome]</p>
+    <main class="container mb-4 pb-5">
+        
+        <!-- SEÇÃO CARROSSEL (TOPO) -->
+        <section class="mb-4">
+            <div id="carrosselLembrancas" class="carousel slide carousel-fade shadow-sm rounded-4 overflow-hidden bg-white" data-bs-ride="carousel">
+                <div class="carousel-inner" id="carrossel-wrapper">
+                    <!-- Imagens injetadas via JS -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrosselLembrancas" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon rounded-circle bg-dark bg-opacity-25 p-3" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrosselLembrancas" data-bs-slide="next">
+                    <span class="carousel-control-next-icon rounded-circle bg-dark bg-opacity-25 p-3" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
             </div>
         </section>
 
-        <section class="secao-musica sketch-border">
-            <div class="spotify-playlist">
-                <div class="playlist-header">
-                    <div class="capa-album">❤️</div>
-                    <div class="playlist-info">
-                        <span>PLAYLIST</span>
-                        <h2>Trilha Sonora da Nossa Vida</h2>
-                        <p>Criada com amor para a melhor mãe</p>
+        <!-- CONTEÚDO DIVIDIDO (ESQUERDA: MENSAGEM / DIREITA: PLAYLIST) -->
+        <section class="row g-4">
+            
+            <!-- ESQUERDA: MENSAGEM -->
+            <div class="col-lg-7">
+                <div class="card-conteudo h-100 p-4 bg-white shadow-sm rounded-4">
+                    <h2 class="titulo-secao mb-3">Minha Homenagem</h2>
+                    <div class="texto-mensagem">
+                        <p>Querida mãe,</p>
+                        <p>Escreva aqui sua mensagem personalizada. Este formato agora se assemelha a um blog ou página pessoal, trazendo uma leitura confortável e moderna.</p>
+                        <p>A página foi levemente compactada para que, na maioria dos computadores, você consiga ver as fotos, a carta e a playlist de uma vez só na tela.</p>
+                        <p>Obrigado por ser meu porto seguro e minha maior inspiração todos os dias. Cada momento ao seu lado é uma lembrança que guardo com muito carinho.</p>
+                        <p class="mt-4 text-end fs-5 mb-0">Com todo o meu amor,<br><strong class="cor-destaque">[Seu Nome]</strong></p>
                     </div>
-                </div>
-
-                <div class="musicas-lista" id="lista-playlist">
-                    </div>
-
-                <div class="player-controle">
-                    <div class="info-tocando">
-                        <strong id="track-title">Selecione uma música</strong>
-                    </div>
-                    <audio id="main-audio" controls></audio>
-                </div>
-
-                <div id="letra-container" class="letra-box">
-                    <span class="letra-label">TRECHO FAVORITO</span>
-                    <p id="letra-texto">A música é o que a alma fala...</p>
                 </div>
             </div>
+
+            <!-- DIREITA: PLAYLIST E TRECHO FAVORITO -->
+            <div class="col-lg-5">
+                <div class="d-flex flex-column gap-3 h-100">
+                    
+                    <!-- Card da Playlist -->
+                    <div class="card-conteudo p-4 bg-white shadow-sm rounded-4 flex-grow-1">
+                        <div class="d-flex align-items-center mb-3 gap-3">
+                            <div class="icone-musica rounded-circle d-flex align-items-center justify-content-center">
+                                <i class="fa-solid fa-headphones"></i>
+                            </div>
+                            <div>
+                                <h3 class="titulo-secao fs-4 mb-0">Nossa Trilha Sonora</h3>
+                                <span class="text-muted small">Escolha uma música</span>
+                            </div>
+                        </div>
+
+                        <div class="musicas-lista" id="lista-playlist">
+                            <!-- Lista injetada via JS -->
+                        </div>
+                    </div>
+
+                    <!-- Card do Trecho Favorito -->
+                    <div class="card-conteudo p-3 bg-destaque-suave shadow-sm rounded-4">
+                        <span class="d-block mb-2 text-uppercase fw-bold cor-destaque" style="font-size: 0.8rem; letter-spacing: 1px;">
+                            <i class="fa-solid fa-quote-left me-2"></i>Trecho Especial
+                        </span>
+                        <p id="letra-texto" class="m-0 fst-italic texto-trecho fs-6">Selecione uma música acima para ver a letra aqui...</p>
+                    </div>
+
+                </div>
+            </div>
+
         </section>
+
     </main>
 
+    <!-- PLAYER DE ÁUDIO FIXO NO RODAPÉ -->
+    <div class="fixed-bottom player-fixo shadow-lg py-2 px-3">
+        <div class="container d-flex align-items-center justify-content-between flex-wrap gap-2">
+            <div class="info-tocando d-flex align-items-center gap-3">
+                <div class="mini-capa rounded-circle d-flex align-items-center justify-content-center">
+                    <i class="fa-solid fa-music"></i>
+                </div>
+                <div>
+                    <span class="d-block fw-bold text-dark lh-sm" id="track-title-fixed">Nenhuma música</span>
+                    <small class="text-muted lh-sm" id="track-artist-fixed">Aguardando seleção...</small>
+                </div>
+            </div>
+            <div class="controle-audio flex-grow-1 ms-md-4" style="max-width: 600px;">
+                <audio id="main-audio" controls class="w-100"></audio>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
