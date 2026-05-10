@@ -3,260 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Para Minha Mãe</title>
-    <style>
-        /* --- ESTILOS CSS --- */
-        :root {
-            --cor-fundo: #fff0f5; /* Rosa bem claro */
-            --cor-texto: #4a4a4a;
-            --cor-destaque: #d87093; /* Rosa escuro/PaleVioletRed */
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--cor-fundo);
-            color: var(--cor-texto);
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        header {
-            text-align: center;
-            padding: 2rem;
-            color: var(--cor-destaque);
-        }
-
-        main {
-            width: 90%;
-            max-width: 800px;
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            margin-bottom: 3rem;
-        }
-
-        /* Seção da Carta */
-        .carta-container {
-            background: white;
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            line-height: 1.6;
-            text-align: justify;
-            border-top: 5px solid var(--cor-destaque);
-        }
-
-        /* Seção do Carrossel */
-        .carrossel-container {
-            position: relative;
-            width: 100%;
-            height: 400px;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            background-color: #000;
-        }
-
-        .slide {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            position: absolute;
-            opacity: 0;
-            transition: opacity 0.8s ease-in-out;
-        }
-
-        .slide.ativo {
-            opacity: 1;
-        }
-
-        .btn-carrossel {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(255,255,255,0.7);
-            color: var(--cor-destaque);
-            border: none;
-            padding: 10px 15px;
-            cursor: pointer;
-            font-size: 1.5rem;
-            border-radius: 50%;
-            transition: background 0.3s;
-        }
-
-        .btn-carrossel:hover {
-            background: white;
-        }
-
-        .btn-prev { left: 10px; }
-        .btn-next { right: 10px; }
-
-        /* Seção de Música */
-        .musica-container {
-            background: white;
-            padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            text-align: center;
-        }
-
-        select {
-            padding: 10px;
-            font-size: 1rem;
-            border-radius: 8px;
-            border: 1px solid #ccc;
-            margin-bottom: 1rem;
-            width: 80%;
-            max-width: 400px;
-        }
-
-        audio {
-            width: 100%;
-            margin-top: 1rem;
-        }
-
-        .letra-container {
-            margin-top: 1.5rem;
-            padding: 1.5rem;
-            background-color: var(--cor-fundo);
-            border-radius: 10px;
-            font-style: italic;
-            color: var(--cor-destaque);
-        }
-
-    </style>
+    <title>Para Minha Mãe ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Indie+Flower&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+    <div class="sketch-overlay"></div>
+
     <header>
-        <h1>Feliz Dia das Mães! ❤️</h1>
+        <h1 class="titulo-manuscrito">Feliz Dia das Mães, Mãe!</h1>
     </header>
 
-    <main>
-        <!-- CARROSSEL DE FOTOS -->
-        <section class="carrossel-container">
-            <!-- Substitua os 'src' abaixo pelos caminhos das suas fotos -->
-            <img src="https://via.placeholder.com/800x400?text=Foto+1+(Coloque+sua+foto+aqui)" class="slide ativo" alt="Nossa foto 1">
-            <img src="https://via.placeholder.com/800x400?text=Foto+2+(Coloque+sua+foto+aqui)" class="slide" alt="Nossa foto 2">
-            <img src="https://via.placeholder.com/800x400?text=Foto+3+(Coloque+sua+foto+aqui)" class="slide" alt="Nossa foto 3">
-            
-            <button class="btn-carrossel btn-prev" onclick="mudarSlide(-1)">❮</button>
-            <button class="btn-carrossel btn-next" onclick="mudarSlide(1)">❯</button>
+    <main class="container">
+        <section class="secao-carrossel sketch-border">
+            <div class="slides-wrapper">
+                <img src="foto1.jpg" class="slide active" alt="Foto 1">
+                <img src="foto2.jpg" class="slide" alt="Foto 2">
+                <img src="foto3.jpg" class="slide" alt="Foto 3">
+            </div>
+            <button class="nav-btn prev" onclick="moveSlide(-1)">❮</button>
+            <button class="nav-btn next" onclick="moveSlide(1)">❯</button>
         </section>
 
-        <!-- HOMENAGEM / CARTA -->
-        <section class="carta-container">
-            <h2 style="color: var(--cor-destaque); margin-top: 0;">Para a melhor mãe do mundo,</h2>
-            <p>
-                Mãe, aqui você pode escrever aquele texto emocionante. Conte uma história engraçada de vocês, 
-                agradeça por tudo que ela fez e faz por você. Este é o espaço para abrir o coração.
-            </p>
-            <p>
-                Você pode usar várias tags de parágrafo como esta para separar o texto e deixar a leitura mais leve.
-            </p>
-            <p style="text-align: right; font-weight: bold;">
-                Com todo o meu amor,<br>
-                [Seu Nome]
-            </p>
+        <section class="secao-carta sketch-border">
+            <div class="papel-pautado">
+                <h2 class="titulo-carta">Minha Homenagem</h2>
+                <p>Querida mãe,</p>
+                <p>Escreva aqui sua mensagem personalizada. Use este espaço para dizer o quanto ela é especial. 
+                   O design foi pensado para parecer uma carta real escrita em papel pautado.</p>
+                <p>Obrigado por ser meu porto seguro e minha maior inspiração todos os dias.</p>
+                <p class="assinatura">Com amor, [Seu Nome]</p>
+            </div>
         </section>
 
-        <!-- PLAYLIST E LETRA -->
-        <section class="musica-container">
-            <h2 style="color: var(--cor-destaque); margin-top: 0;">Nossa Trilha Sonora 🎵</h2>
-            <p>Escolha uma música que marca a nossa história:</p>
-            
-            <select id="seletor-musica" onchange="atualizarMusica()">
-                <option value="" disabled selected>Selecione uma música...</option>
-                <!-- As opções serão preenchidas pelo JavaScript -->
-            </select>
+        <section class="secao-musica sketch-border">
+            <div class="spotify-playlist">
+                <div class="playlist-header">
+                    <div class="capa-album">❤️</div>
+                    <div class="playlist-info">
+                        <span>PLAYLIST</span>
+                        <h2>Trilha Sonora da Nossa Vida</h2>
+                        <p>Criada com amor para a melhor mãe</p>
+                    </div>
+                </div>
 
-            <audio id="player-audio" controls>
-                <source src="" type="audio/mpeg">
-                Seu navegador não suporta o elemento de áudio.
-            </audio>
+                <div class="musicas-lista" id="lista-playlist">
+                    </div>
 
-            <div class="letra-container" id="container-letra" style="display: none;">
-                <h3>Meu trecho favorito:</h3>
-                <p id="texto-letra"></p>
+                <div class="player-controle">
+                    <div class="info-tocando">
+                        <strong id="track-title">Selecione uma música</strong>
+                    </div>
+                    <audio id="main-audio" controls></audio>
+                </div>
+
+                <div id="letra-container" class="letra-box">
+                    <span class="letra-label">TRECHO FAVORITO</span>
+                    <p id="letra-texto">A música é o que a alma fala...</p>
+                </div>
             </div>
         </section>
     </main>
 
-    <script>
-        /* --- JAVASCRIPT --- */
-
-        // 1. LÓGICA DO CARROSSEL
-        let slideAtual = 0;
-        const slides = document.querySelectorAll('.slide');
-
-        function mudarSlide(direcao) {
-            slides[slideAtual].classList.remove('ativo');
-            slideAtual += direcao;
-
-            if (slideAtual >= slides.length) {
-                slideAtual = 0;
-            } else if (slideAtual < 0) {
-                slideAtual = slides.length - 1;
-            }
-
-            slides[slideAtual].classList.add('ativo');
-        }
-
-        // Troca a foto automaticamente a cada 4 segundos (opcional)
-        setInterval(() => mudarSlide(1), 4000);
-
-
-        // 2. LÓGICA DA PLAYLIST E LETRAS
-        const playlist = [
-            {
-                id: 1,
-                titulo: "Como É Grande O Meu Amor Por Você - Roberto Carlos",
-                arquivo: "caminho/para/musica1.mp3", // <-- Coloque o nome do seu arquivo mp3 aqui
-                trechoFavorito: "Eu tenho tanto pra lhe falar<br>Mas com palavras não sei dizer<br>Como é grande o meu amor por você..."
-            },
-            {
-                id: 2,
-                titulo: "Trem Bala - Ana Vilela",
-                arquivo: "caminho/para/musica2.mp3", // <-- Coloque o nome do seu arquivo mp3 aqui
-                trechoFavorito: "Não é sobre ter todas as pessoas do mundo pra si<br>É sobre saber que em algum lugar, alguém zela por ti..."
-            },
-            {
-                id: 3,
-                titulo: "Exemplo de Música 3",
-                arquivo: "caminho/para/musica3.mp3", // <-- Coloque o nome do seu arquivo mp3 aqui
-                trechoFavorito: "Cole a letra da sua terceira música aqui.<br>Use a tag <br> para quebrar a linha."
-            }
-        ];
-
-        const seletor = document.getElementById('seletor-musica');
-        const playerAudio = document.getElementById('player-audio');
-        const containerLetra = document.getElementById('container-letra');
-        const textoLetra = document.getElementById('texto-letra');
-
-        // Preencher o seletor com as músicas da playlist
-        playlist.forEach((musica, index) => {
-            const option = document.createElement('option');
-            option.value = index;
-            option.textContent = musica.titulo;
-            seletor.appendChild(option);
-        });
-
-        // Função chamada quando uma música é selecionada
-        function atualizarMusica() {
-            const indexSelecionado = seletor.value;
-            const musica = playlist[indexSelecionado];
-
-            // Atualiza o áudio
-            playerAudio.src = musica.arquivo;
-            playerAudio.play(); // Inicia a música automaticamente
-
-            // Atualiza a letra
-            textoLetra.innerHTML = musica.trechoFavorito;
-            containerLetra.style.display = 'block'; // Mostra a caixa de letra
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
